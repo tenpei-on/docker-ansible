@@ -1,0 +1,8 @@
+- name: delete anonymous users
+  mysql_user:
+    name: ""
+    host: "{{ item }}"
+    state: absent
+  with_items:
+    - localhost.localdomain
+    - localhost

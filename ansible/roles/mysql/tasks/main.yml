@@ -1,0 +1,4 @@
+---
+- include: install_mysqld_5_6.yml
+- include: startup_mysql.yml
+- include: setup_musql.yml

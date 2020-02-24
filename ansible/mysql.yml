@@ -1,0 +1,8 @@
+---
+- name: install and configure the db
+  hosts: db_server
+  remote_user: root
+
+  roles: 
+    - mysql
+
