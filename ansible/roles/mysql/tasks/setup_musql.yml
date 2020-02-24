@@ -1,4 +1,5 @@
 - name: delete anonymous users
+# must exec "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py" to execution pip install and exec "python get-pip.py"
   mysql_user:
     name: ""
     host: "{{ item }}"
